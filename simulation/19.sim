@@ -12,14 +12,14 @@ OMS3.sim()
     model() {
     	
         components {
-            "flowDispatcher" "org.altervista.growworkinghard.jswmm.routing.FlowRateDispatcher"
-            "routing" "org.altervista.growworkinghard.jswmm.routing.Routing"
+            "flowDispatcher" "com.github.geoframecomponents.jswmm.routing.FlowRateDispatcher"
+            "routing" "com.github.geoframecomponents.jswmm.routing.Routing"
         }
         
         parameter {
         	"flowDispatcher.upstreamNodeName" "J10"
-        	"flowDispatcher.linkName" "19"
-        	"routing.linkName" "19"
+        	"flowDispatcher.linkName" "9"
+        	"routing.linkName" "9"
         }
         
         inFluxes {

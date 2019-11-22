@@ -7,19 +7,19 @@ import static oms3.SimBuilder.instance as OMS3
 OMS3.sim()
 {
 
-    //build()
+    // build()
     
     model() {
     	
         components {
-            "flowDispatcher" "org.altervista.growworkinghard.jswmm.routing.FlowRateDispatcher"
-            "routing" "org.altervista.growworkinghard.jswmm.routing.Routing"
+            "flowDispatcher" "com.github.geoframecomponents.jswmm.routing.FlowRateDispatcher"
+            "routing" "com.github.geoframecomponents.jswmm.routing.Routing"
         }
         
         parameter {
         	"flowDispatcher.upstreamNodeName" "J9"
-        	"flowDispatcher.linkName" "18"
-        	"routing.linkName" "18"
+        	"flowDispatcher.linkName" "8"
+        	"routing.linkName" "8"
         }
         
         inFluxes {

@@ -20,7 +20,8 @@
 package ex0;
 
 import oms3.annotations.*;
-import org.altervista.growworkinghard.jswmm.dataStructure.SWMMobject;
+import com.github.geoframecomponents.jswmm.dataStructure.SWMMobject;
+
 
 /**
  * @author sidereus
@@ -29,11 +30,11 @@ public class OutT {
 
     @In
     @OutNode
-    public SWMMobject datastructure = new SWMMobject();
-   
+    public SWMMobject datastructure = null;
+
     @Execute
     public void run() {
-        if (datastructure == null)
-            throw new NullPointerException();
+    //    if (datastructure == null)
+    //        throw new NullPointerException();
     }
 }

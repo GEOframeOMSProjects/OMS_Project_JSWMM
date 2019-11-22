@@ -13,13 +13,13 @@ OMS3.sim()
     model() {
     	
         components {
-            "prerunoff" "org.altervista.growworkinghard.jswmm.runoff.PreRunoff"
-            "runoff" "org.altervista.growworkinghard.jswmm.runoff.Runoff"
+            "prerunoff" "com.github.geoframecomponents.jswmm.runoff.PreRunoff"
+            "runoff" "com.github.geoframecomponents.jswmm.runoff.Runoff"
         }
         
         parameter {
-            "prerunoff.areaName" "6"
-            "runoff.areaName" "6"
+            "prerunoff.areaName" "Sub6"
+            "runoff.areaName" "Sub6"
             "runoff.nodeName" "J7"
             "prerunoff.aLPP" 1
             "prerunoff.nLPP" 1
