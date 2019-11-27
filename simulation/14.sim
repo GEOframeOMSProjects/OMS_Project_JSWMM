@@ -1,14 +1,7 @@
-/*
- * Hello 'world' example.
- *   A component printing a greeting.
- */
 import static oms3.SimBuilder.instance as OMS3
 
 OMS3.sim()
-{
-
-    // build()
-    
+{    
     model() {
     	
         components {
@@ -18,14 +11,13 @@ OMS3.sim()
         
         parameter {
         	"flowDispatcher.upstreamNodeName" "J5"
-        	"flowDispatcher.linkName" "4"
-        	"routing.linkName" "4"
+        	"flowDispatcher.linkName" "14"
+        	"routing.linkName" "14"
         }
         
         inFluxes {
         	"0.datastructure" "flowDispatcher.dataStructure"
         	"4.runoffFlowRate" "flowDispatcher.flowRate1"
-        	"0.net3subtrees" "routing.net3subtrees"
         }
                 
         outFluxes {

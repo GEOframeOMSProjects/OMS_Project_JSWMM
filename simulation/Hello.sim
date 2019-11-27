@@ -1,7 +1,3 @@
-/*
- * Hello 'world' example.
- *   A component printing a greeting.
- */
 import static oms3.SimBuilder.instance as OMS3
 import com.github.geoframecomponents.jswmm.dataStructure.SWMMobject
 
@@ -9,6 +5,8 @@ OMS3.graph(path: "./data/topo.csv",
            simpath: "./simulation/") {
            	
 	resource "$oms_prj/lib"
+	
+	//build()
 
     graph(traverser: "downstream.all") {
     	parameter {
@@ -30,8 +28,6 @@ OMS3.graph(path: "./data/topo.csv",
     	"9" "{overwrite}"
     	"10" "{overwrite}"
     }
-    
-    build()
     
     model() {
     	   	

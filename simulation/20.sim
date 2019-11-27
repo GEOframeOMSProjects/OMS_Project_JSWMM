@@ -6,9 +6,6 @@ import static oms3.SimBuilder.instance as OMS3
 
 OMS3.sim()
 {
-
-    // build()
-    
     model() {
     	
         components {
@@ -18,8 +15,8 @@ OMS3.sim()
         
         parameter {
         	"flowDispatcher.upstreamNodeName" "J8"
-        	"flowDispatcher.linkName" "10"
-        	"routing.linkName" "10"
+        	"flowDispatcher.linkName" "20"
+        	"routing.linkName" "20"
         }
         
         inFluxes {
@@ -28,7 +25,6 @@ OMS3.sim()
         	"17.routingFlowRate" "flowDispatcher.flowRate2"
         	"18.routingFlowRate" "flowDispatcher.flowRate3"
         	"19.routingFlowRate" "flowDispatcher.flowRate4"
-        	"0.net3subtrees" "routing.net3subtrees"
         }
                 
         outFluxes {

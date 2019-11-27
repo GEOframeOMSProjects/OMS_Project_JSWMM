@@ -1,15 +1,10 @@
-/*
- * Hello 'world' example.
- *   A component printing a greeting.
- */
 import static oms3.SimBuilder.instance as OMS3
 
 OMS3.sim()
 {
 
 	resource "$oms_prj/lib"
-    // build()
-    
+	    
     model() {
     	
         components {
